@@ -1,0 +1,57 @@
+
+  
+<div class="container">
+  <form method="POST" action="/">
+    <div>
+      <center>
+        <h1>你想對誰說幹話？</h1>
+      </center>
+    </div>
+    <div class="row">
+      <div class="col-6 col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" class="card-img-top" height="220" width="250">
+          <div class="card-body">
+            <p class="card-text">
+              <input type="radio" id="engineer"  value="engineer" name="occupation"{{#if options.occupation}} checked {{/if}} >
+              <label for="engineer">工程師</label>
+            </p>
+              
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" class="card-img-top"  height="220" width="250">
+          <div class="card-body">
+            <p class="card-text">
+              <input type="radio" id="designer"  value="designer" name="occupation" {{#if options.occupation}} checked {{/if}}>
+              <label for="designer">設計師</label>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" class="card-img-top"  height="220" width="250">
+          <div class="card-body">
+            <p class="card-text">
+              <input type="radio" id="entrepreneur" name="occupation" value="entrepreneur"{{#if options.occupation}} checked {{/if}}>
+              <label for="entrepreneur">創業家</label>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-2 ">
+        <button class="btn btn-info btn-lg" type="submit">產生幹話</button>
+      </div>
+      <div class="form-group col-9">
+        <textarea class="form-control" id="phrase" name="phrase" rows="3">{{trashTalk}}</textarea>
+      </div>
+    </div>
+  </form>
+</div>
+
