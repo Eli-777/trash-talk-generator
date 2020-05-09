@@ -13,7 +13,7 @@
           <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" class="card-img-top" height="220" width="250">
           <div class="card-body">
             <p class="card-text">
-              <input type="radio" id="engineer"  value="engineer" name="occupation"{{#if options.occupation}} checked {{/if}} >
+              <input type="radio" id="engineer"  value="engineer" name="occupation"{{#setChecked options.occupation 'engineer'}}checked{{/setChecked}} >
               <label for="engineer">工程師</label>
             </p>
               
@@ -25,7 +25,7 @@
           <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" class="card-img-top"  height="220" width="250">
           <div class="card-body">
             <p class="card-text">
-              <input type="radio" id="designer"  value="designer" name="occupation" {{#if options.occupation}} checked {{/if}}>
+              <input type="radio" id="designer"  value="designer" name="occupation" {{#setChecked options.occupation 'designer'}}checked{{/setChecked}}>
               <label for="designer">設計師</label>
             </p>
           </div>
@@ -36,7 +36,7 @@
           <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" class="card-img-top"  height="220" width="250">
           <div class="card-body">
             <p class="card-text">
-              <input type="radio" id="entrepreneur" name="occupation" value="entrepreneur"{{#if options.occupation}} checked {{/if}}>
+              <input type="radio" id="entrepreneur" name="occupation" value="entrepreneur"{{#setChecked options.occupation 'entrepreneur'}}checked{{/setChecked}}>
               <label for="entrepreneur">創業家</label>
             </p>
           </div>

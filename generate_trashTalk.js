@@ -27,7 +27,7 @@ function generateTrashTalk(options) {
   //選擇職業
 
   if (!options.occupation) {
-    return '還再混阿! 選個職業吧?';
+    return '選個職業都懶?';
   }
 
   //隨機選句子
