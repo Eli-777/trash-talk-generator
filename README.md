@@ -1,6 +1,6 @@
 
 # restaurant list
-用Node.js、Express、handlebars練習的作品，內容主要為產生幹話。
+用Node.js、Express、handlebars、body-parser練習的作品，內容主要為產生幹話。
 
 ## 安裝方法
 下載專案
@@ -27,6 +27,7 @@ npm start
 - Node.js v12.16.2 -執行環境
 - Express V4.17.1 -框架
 - Express-handlebars V4.0.4 -模板引擎
+- body-parser V1.19.0
 
 ## 專案畫面
 ![Alt text](/indexPic.png)
