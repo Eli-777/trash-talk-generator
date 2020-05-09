@@ -5,7 +5,7 @@
 ## 安裝方法
 下載專案
 ```
-git clone https://github.com/Eli-777/trash-talk-generator
+git clone https://github.com/Eli-777/trash-talk-generator.git
 ```
 安裝 Package
 ```
