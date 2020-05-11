@@ -8,7 +8,25 @@
       </center>
     </div>
     <div class="row">
-      <div class="col-6 col-md-4">
+      {{#each occupation}}
+        <div class="col-6 col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="{{this.image}}"
+              class="card-img-top" height="220" width="250">
+            <div class="card-body">
+              <p class="card-text">
+                <input type="radio" id="{{this.occupation}}" value="{{this.occupation}}" name="occupation"
+                  {{#setChecked options.occupation '{{this.occupation}}' }} checked {{/setChecked}}>
+                <label for="{{this.occupation}}">{{this.job}}</label>
+              </p>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+
+
+      {{!-- 沒用each --}}
+      {{!-- <div class="col-6 col-md-4">
         <div class="card" style="width: 18rem;">
           <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" class="card-img-top" height="220" width="250">
           <div class="card-body">
@@ -41,7 +59,7 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> --}}
     </div>
     <br>
     <div class="row">
